@@ -41,9 +41,16 @@ class ViewController: UIViewController {
         if(lnum>rnum){
             lscore+=1
             leftscorelabel.text=String(lscore)
+             rightscorelabel.text=String(rscore)
         }else if(lnum<rnum){
             rscore+=1
             rightscorelabel.text=String(rscore)
+            leftscorelabel.text=String(lscore)
+        }else if(lnum==rnum){
+           
+             leftscorelabel.text="Tie"
+            rightscorelabel.text="Tie"
+            
         }
     }
     
